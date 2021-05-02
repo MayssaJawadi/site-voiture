@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>car</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+    <header>   
+<!-- phase initial -->
+            <div class="phase-initial">
+ <div class="logo"><img src="data:image/png;base64,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" alt="image">
+</div>   
+                <div class="two">
+                   <div class="number">
+                    <p ><a href="tel:+21622430500">+216 22 430 500</a><br>
+                         <a href="tel:+21622658734">+216 22 658 734</a></p> 
+                    </div>
+                    <div class="lang">
+                        <a href="https://www.tunisia-rentcar.com"><span>Fr</span></a>
+                        <a href="https://www.tunisia-rentcar.com/en">En</a>
+                        <a href="https://www.tunisia-rentcar.com/de">De</a>
+                        <a href="https://www.tunisia-rentcar.com/it">It</a>
+                    </div>
+                </div> 
+            </div>                
+<!-- phase initial end -->
+    <!-- Navigation -->
+  <nav>
+        <ul>
+          <li class="active"><a href="car.html" >Accueil</a></li>
+		  <li ><a href="voiture.html">Voitures</a></li>
+          <li ><a href="https://www.tunisia-rentcar.com/tarifs.php">Tarifs</a></li>
+          <li ><a href="https://www.tunisia-rentcar.com/reservation.php">Réservation</a></li>
+		  <li ><a href="https://www.tunisia-rentcar.com/taxi-tunisie.php">Taxi Tunisie</a></li>
+		  <li><span>|</span></li>
+          <li ><a href="https://www.tunisia-rentcar.com/faq.php">FAQ</a></li>
+          <li ><a href="https://www.tunisia-rentcar.com/contact.php">Contact</a></li>
+          <li ><a href="https://www.tunisia-rentcar.com/blog/">Blog</a></li>
+        </ul>
+  </nav>
+<!-- Navigation end -->        
+    </header>
+    <main>
+<section id="accueil">
+    <div class="img-accueil">
+        <img src="https://www.tunisia-rentcar.com/assets/images/polo.jpg" alt="img" width="100%">
+    </div>
+<!--Form start -->
+<div class="form-all">
+    <h1><center> Réservation <br> location</center></h1><br>
+    <div class="select-all">     
+                    <select name="reference" class="select">
+                      <option value="0">Type véhicule</option>
+                      <option value="1">Dacia Mcv Sedan</option>
+                      <option value="2">Seat ibiza xcellence (Full Option)</option>
+                      <option value="3">Seat Ibiza  Volkswagen</option>
+                      <option value="4">Seat Arona  Volkswagen</option>
+                      <option value="5">Renault Symbol Sedan</option>
+                      <option value="6">Volkswagen Polo</option>
+                      <option value="7">Volkswagen Polo Sedan</option>
+                      <option value="8">Skoda Fabia</option>
+                      <option value="9">Renault CLIO </option>
+                      <option value="10">Kia picanto Gt-Line</option>
+                      <option value="11">Hyundai I10  Boite Auto</option>
+                      <option value="12">Jeep Renegade  bva 4x2</option>  
+                    </select> 
+                </div>                  
+     <div class="select">
+        <select class="select" name="depart">
+        <option value="-1">Prise en charge du véhicule</option> <!--start with Prise..-->
+        <option value="0">Aéroport Tunis Carthage</option>
+        <option value="1">Aéroport enfidha</option>
+        <option value="2">Aéroport monastir</option>
+        <option value="3">Aéroport Djerba</option>
+        <option value="4">Tunis</option>
+        <option value="5">Nabeul</option>
+        <option value="6">Hammamet</option>
+        <option value="7">Sousse</option>
+        <option value="8">Sfax</option>
+         </select>
+    </div>
+    <div class="select" >
+      <select class="select" name="retour">
+      <option value="-1">Remise du véhicule</option> <!--start with Remise..-->
+      <option value="0">Aéroport Tunis Carthage</option>
+      <option value="1">Aéroport enfidha</option>
+      <option value="2">Aéroport monastir</option>
+      <option value="3">Aéroport Djerba</option>
+      <option value="4">Tunis</option>
+      <option value="5">Nabeul</option>
+      <option value="6">Hammamet</option>
+      <option value="7">Sousse</option>
+      <option value="8">Sfax</option>
+        </select>
+    </div>  
+    <div class="select">      
+<input value="Prise Le" type="text" id="date_debut"> </div>                              
+<div class="select select1">
+    <select name="heure" class="form-control">                                                 
+        <option value="0">00h:00</option>
+        <option value="1">01h:00</option>
+        <option value="2">02h:00</option>
+        <option value="3">03h:00</option>
+        <option value="4">04h:00</option>
+        <option value="5">05h:00</option>
+        <option value="6">06h:00</option>
+        <option value="7">07h:00</option>
+        <option value="8">08h:00</option>
+        <option value="9">09h:00</option>
+        <option value="10">10h:00</option>
+        <option value="11">11h:00</option>
+        <option value="12">12h:00</option>
+        <option value="13">13h:00</option>
+        <option value="14">14h:00</option>
+        <option value="15">15h:00</option>
+        <option value="16">16h:00</option>
+        <option value="17">17h:00</option>
+        <option value="18">18h:00</option>
+        <option value="19">19h:00</option>
+        <option value="20">20h:00</option>
+        <option value="21">21h:00</option>
+        <option value="22">22h:00</option>
+        <option value="23">23h:00</option>                                           
+    </select> 
+    </div>
+    <div class="select">                              
+<input value="Remise Le" type="text" id="date_fin"></div>
+<div class="select select2">
+    <select name="heure" class="form-control">                                                 
+        <option value="0">00h:00</option>
+        <option value="1">01h:00</option>
+        <option value="2">02h:00</option>
+        <option value="3">03h:00</option>
+        <option value="4">04h:00</option>
+        <option value="5">05h:00</option>
+        <option value="6">06h:00</option>
+        <option value="7">07h:00</option>
+        <option value="8">08h:00</option>
+        <option value="9">09h:00</option>
+        <option value="10">10h:00</option>
+        <option value="11">11h:00</option>
+        <option value="12">12h:00</option>
+        <option value="13">13h:00</option>
+        <option value="14">14h:00</option>
+        <option value="15">15h:00</option>
+        <option value="16">16h:00</option>
+        <option value="17">17h:00</option>
+        <option value="18">18h:00</option>
+        <option value="19">19h:00</option>
+        <option value="20">20h:00</option>
+        <option value="21">21h:00</option>
+        <option value="22">22h:00</option>
+        <option value="23">23h:00</option>                                           
+    </select> 
+    </div>                        
+<button type="submit" class="btn">DEVIS & R&Eacute;SERVATION </button>
+<br><br>
+<p class="p-num">Vous avez une question? Appelez  <a href="tel:+21622430500"><br> (+216) 22 430 500</a> <br> <a href="tel:+21622658734">(+216) 22 658 734</a></p></div>
+</div>    
+<!--Form end-->   
+<!--pragraph white-->   
+    <div class="container">
+      <div class="text">
+        <h1 class="agence">Agence location de voiture en Tunisie</h1> </div><br>
+        <p><strong>Agence location de voiture en Tunisie</strong>, Tunisia Rent Car vous offre ses services de location avec une sélection de <a href="https://www.tunisia-rentcar.com/voitures.php" >véhicules de luxe </a>à des prix pas cher.<br>
+        Vous êtes à la recherche d’une offre spéciale de <strong>location de voiture</strong> ? Visitez Tunisia Rent Car et profitez de nos dernières prestations exceptionnelles, accessibles partout en Tunisie : 
+          <br> Notre agence vous assure une vaste gamme de véhicules qui s’adaptent à tous vos besoins.</p>
+      </div>
+    </div>
+<!--pragraph white end-->   
+
+<!--pragraph black start-->   
+<div class="container-black">
+    <div class="text-black">
+        <h1> Un service de location de voiture personnalisé...</h1> <br>
+    <p> Quelque soit votre besoin de location de voiture, déplacement privé ou professionnel, notre agence vous offre un service complet de location de tous types de voitures, disponible <br> sur toute la Tunisie. <br>
+    Le service et l’attention que nous assurons à nos clients garantissent le succès de notre agence.</p>
+    </div>
+<div class="two">
+    <div class="louer">
+<h1>Louer une Voiture en <br> Toute Sécurité</h1>
+<p>Evadez-vous sans prendre le risque de vous égarer</p>
+</div>
+<div class="location">
+<h1>Location de voiture <br> inclut</h1>
+<p>2éme conducteur <br>
+    Siège bèbé <br>
+    Kilométrage ilimité</p>   
+</div>
+</div>
+</div>
+<!--pragraph black end-->   
+
+<!--text & car start-->   
+<div class="container">
+    <div class="text-car">
+        <h2><center>Location voiture Tunisie pas cher avec Tunisia Rent Car</center></h2><br><br>
+        <p>Tunisia Rent Car fait partie des meilleures agences sur le marché de la <strong>location voiture Tunisie pas cher</strong>, 
+        nous sommes reconnus par la qualité de notre gamme de véhicules et de nos prix assez attractifs.
+        Notre <a href="https://tunisia-rentcar.com/voitures.php" title="car">flotte de voitures</a> est très large, 
+        allant du simple polo à la voiture du sport en passant par les véhicules utilitaires et celles utile pour les occasions originales.</p>
+    </div>
+    <br><br><br><br>
+    <div class="two-car">
+          <div class="car">
+            <div class="looking-car">
+              <div class="t-car">
+                <h4>Vous cherchez une voiture à louer ?</h4><br>
+                  <p>Avec Tunisia Rent Car, choisissez parmi une grande sélection, <br>le véhicule haut de gamme qui ravira les personnes les plus exigeants !</p>
+               <br><br>
+                  <a href="tarifs.php" class="btn1">Voir la suite<i class="fa fa-chevron-circle-right" ></i></a> </div>
+                <div class="car-img1"> <img src="https://www.tunisia-rentcar.com/assets/images/seat-ibiza-2020.png" alt="Image"> </div>
+           </div>
+          </div>
+          <div class="car">
+            <div class="looking-car">
+              <div class="t-car">  
+				<h4>Voitures de luxes à des prix exceptionnels </h4><br>
+			 <p>Des modèles de voitures les plus luxueux, <br> mais aussi des marques réputées et le tout proposé à des tarifs avantageux.</p>
+             <br><br>   
+             <a href="voitures.php" class="btn1">Voir la suite<i class="fa fa-chevron-circle-right"></i></a> </div>
+                <div class="car-img2"> <img src="https://www.tunisia-rentcar.com/assets/images/seat-arona-2020.png" alt="Image"> </div>
+             </div>
+          </div>
+        </div>
+<!--text & car end-->   
+<br><br><br>
+<!--text bg black start-->
+<div class="all-black">
+    <div class="text-black">  
+        <h1><center>Réservation location de voiture en Tunisie</center></h1> 
+        <p><center>La Location de voiture avec tunisia-rentcar.com vous garantit des véhicules de qualité, et une  <a href="https://www.tunisia-rentcar.com/reservation.php" title="red">réservation en ligne</a> simple et sécurisée. <br>
+            Notre agence vous assure aussi la rapidité des procédures de location lors de la prise en charge de votre véhicule.</p></center>
+    </div>
+  
+    <div class="num-black">
+        <table class="try">
+            <tr>
+                <td><center><img src="https://www.tunisia-rentcar.com/assets/images/icon1.png" ><br><b>Transfert à l'aéroport Tunis <br>Carthage</b></center></td> 
+                <td><center><img src="https://www.tunisia-rentcar.com/assets/images/icon2.png" ><br><b>Location voiture en ligne </b></center></td>
+                <td><center><img src="https://www.tunisia-rentcar.com/assets/images/icon3.png"><br><b>Des véhicules adaptés à vos <br> besoins</b></center></td>
+                <td><center><img src="https://www.tunisia-rentcar.com/assets/images/icon4.png"><br><b>Transparence & garantie <br> des meilleurs prix </b></center></td>
+            </tr>
+            <tr>
+<td><center><pre>
+Pour que votre vacance soit
+plus séduisante, nous vous 
+proposons un service complet 
+de transfert avec un chauffeur 
+dès votre arrivée à l’aéroport.</pre></center></td>
+
+<td><center><pre>
+L'agence Tunisia Rent Car vous 
+propose un service de 
+réservation de voiture en ligne 
+simple et pratique disponible 
+24h/24 et 7j/7.</pre></center></td>
+
+<td><center><pre>
+Notre agence de location de 
+voiture met à votre disposition 
+une flotte variée de véhicules 
+récents de toutes les marques à 
+des prix pas cher.</pre></center></td>
+
+<td><center><pre>
+Tunisia Rent Car vous assure 
+une transparence totale et une 
+garantie absolue pour trouver 
+une voiture adaptée à votre
+besoin et aux meilleurs prix.</pre></center></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+<!--text bg black end-->
+<!--footer top start-->
+<div class="footer-top">
+    <div class="three-class">
+        <div class="each-class">
+            <h3>Trust Rent Car</h3><br>
+            <ul>
+                <li ><a href="https://www.tunisia-rentcar.com/conditions-location.php">Conditions</a></li>
+               <li ><a href="https://www.tunisia-rentcar.com/assurenceplus.php">Assurance ++</a></li>
+             </ul>         
+        </div>
+        <div class="each-class">
+            <h3>Liens Utiles</h3><br>
+            <ul>
+                <li><a href="https://www.tunisia-rentcar.com/location-voiture-tourisme.php">Location Voiture de Tourisme</a></li>
+                <li><a href="https://www.tunisia-rentcar.com/location-voiture-longue-duree-tunisie.php">Location Voiture longue durée</a></li>
+                <li><a href="https://www.tunisia-rentcar.com/location-voiture-la-marsa.php">Location Voiture La Marsa</a></li>
+                 <li><a href="https://www.tunisia-rentcar.com/location-voiture-hammamet.php">Location Voiture Hammamet</a></li>
+                <li><a href="agence-location-voiture-tunisie.php">Location voiture Tunis</a></li>   
+             </ul>
+        </div>
+        <div class="each-class">
+            <h3>Agence Aux Aéroports</h3><br>
+            <ul>
+                <li><a href="https://www.tunisia-rentcar.com/location-voiture-aeroport-tunis-carthage">Location Voiture Aéroport Tunis Carthage</a></li>
+                <li><a href="https://www.tunisia-rentcar.com/location-voiture-aeroport-monastir">Location Voiture Aéroport Monastir</a></li>
+                <li><a href="https://www.tunisia-rentcar.com/location-voiture-aeroport-enfidha">Location Voiture Aéroport Enfidha</a></li>
+            </ul>
+        </div>
+    </div>
+            <br><br>
+            <div class="l-text">
+                <h3>Agence de location voiture Tunisie, Tunisia Rent Car</h3>
+                <pre> <small>
+Notre agence vous permet de trouver la voiture idéale qui répond à vos exigences parmi une large gamme de voitures de luxe à des prix défiants à toutes concurrences en Tunisie.Louez le
+meilleur véhicule, et réservez-le en ligne sans prépaiement.Conduisez en toute sécurité et profitez de vos moments inoubliables.Avec notre agence, la location de voiture est une expérience
+à refaire sans doute.   </small>
+                </pre> 
+              </div>   
+        </div>
+    </div>
+</div>
+
+
+    
+        </section>
+        <section id="voitures">
+            
+        </section>
+        <section id="tarifs">
+            
+        </section>
+        <section id="réservation">
+            
+        </section>
+        <section id="taxi tunisie">
+            
+        </section>
+        <section id="faq">
+            
+        </section>
+        <section id="contact">
+            
+        </section>
+        <section id="bloq">
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="all-footer">
+        <p class="copyright-text">Copyright  <rouge> &copy; 2017 </rouge>All Rights Reserved by <a href="#">Scanfcode</a></p></div> 
+    <ul class="social-icons">
+        <li><a class="facebook" href="https://www.facebook.com/TrustHammamet"><i class="fa fa-facebook"></i></a></li>
+          
+        <li><a class="twitter" href="https://twitter.com/TrustRentCAR"><i class="fa fa-twitter"></i></a></li>
+          
+        <li><a class="linkedin" href="https://www.linkedin.com/in/tunisia-rentcar-trust-hammamet"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>   
+                </div> 
+            </div>
+        </div>
+    </div>
+                          
+    </footer>   
+</body>
+</html>

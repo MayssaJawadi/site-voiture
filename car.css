@@ -1,0 +1,331 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* Navigation*/
+  nav ul {
+     list-style-type:none;    /*enlever les puces */
+      /*display: inline-block;*/
+     /* float: left;*/
+     background-color: rgb(59, 55, 55) ;
+     padding: 15px;
+     flex-direction: row;
+     justify-content: space-around;
+  }
+  nav li{
+      float:left; /*pour n’avoir aucune espace entre mes éléments de liste */
+      width: 8%;
+      text-align: center;
+  }
+  nav ul::after{ /*pour eviter que sa hauteur soit nul*/
+    content:"";
+    display: table;
+    clear: both;
+}
+  nav a{
+      display: block;
+      text-decoration: none; /*pour enlever le trait de soulignement*/
+      color: rgb(255, 255, 255);
+  }
+  nav .active{
+      background-color: orange;
+  }
+  nav a:hover{
+      background-color: orange;
+      height:auto;
+  }
+/*Navigation end*/
+/*phase initial*/
+.two{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    right: 90px;
+}
+
+.phase-initial{
+    background-color: black;
+}
+
+.logo{
+    position: relative;
+    left:100px;
+    bottom: -20px;
+    padding: 12px;
+}
+
+.two a{
+    text-decoration: none; /*pour enlever le trait de soulignement*/
+    color: rgb(255, 255, 255);
+}
+.lang{
+    position: relative;
+    left: 20px; 
+    bottom: 80px;
+}
+.number{
+    position: relative;
+    bottom: 80px;
+}
+/*styl form*/
+.form-all{
+    position: absolute;
+    top:20%;
+    margin: 80px;
+    width: 400px;
+    height: 550px;
+    padding: 40px;
+    background-color:#333;
+}
+.form-all h1{
+    color: white;
+    text-transform: uppercase;
+}
+/* the submit button */
+.btn {
+    background-color:orange;
+    color: white;
+    padding: 14px 17px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+.p-num {
+color:white;
+}
+.p-num a{
+    text-decoration: none;
+    color: red;
+}
+.select {
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  background: gris;
+} 
+/*styl form end*/
+
+/*pragraph white*/
+.container h1,P{
+    text-align: center;
+}
+.container{
+    padding: 50px;
+}
+.container a{
+    text-decoration: none; /*pour enlever le trait de soulignement d'un lien*/
+    color: red;}
+.agence{
+    font-size: 50px;
+}
+.container P{
+    color:rgb(105, 105, 105);
+}
+/*pragraph white end*/
+
+/*pragraph black*/
+
+.text-black p{
+    text-align: left;
+}
+.container-black{
+    background-color: black;
+    color: white;
+    padding: 70px;
+}
+.louer{
+    background-color: rgb(241, 66, 66);
+    width: 500px;
+    height: 180px;
+}
+.location{
+background-color: rgb(231, 162, 35);
+width: 600px;
+height: 210px;
+}
+.two{
+    display: grid;
+    grid-template-columns:auto auto;
+    gap: 10px 20px;
+    top: 30px;
+}
+.louer h1{
+    font-size: 40px;
+    padding: 20px;
+}
+.location h1{
+    font-size: 40px;
+    padding: 20px;
+}
+.louer p{
+    text-align: left;
+    padding-left: 20px;
+}
+.location p{
+    text-align: left;
+    padding-left: 20px;
+}
+/*pragraph black and*/
+
+/*text & car start*/
+.car{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 80%;
+    height: 100%;
+    padding-top: 90px;
+    padding-left: 50px;
+    position: relative;
+}
+.two-car{
+    display: grid;
+    grid-template-columns:auto auto;
+    gap: 10px 20px;
+}
+.t-car{
+    width: 200px;
+    height: 250px;
+}
+.t-car p{
+    text-align: left;
+}
+.car-img1{
+position: absolute;
+  right:-120px;
+  top: 20px;
+
+}
+.car-img2{
+position: absolute;
+left:250px;
+top: 20px;
+}
+.btn1 {
+    background-color:rgba(47, 49, 51, 0.986);
+    color: white;
+    padding: 14px 17px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+
+  }
+
+   /*text & car end*/
+/*text bg black start*/
+.num-black{
+        color:white;
+        padding-bottom: 60px;
+
+    }
+    .text-black{
+        color: white;
+        
+    }
+    .text-black h1{
+        padding: 40px;
+    }
+    .all-black{
+        background-color: black;
+    }
+.try{
+    padding: 10px
+}
+table tr {
+    padding: 20px;
+}
+table td{
+    padding: 10px;
+}
+table{
+    position:relative;
+    left: 100px;
+}
+/*text bg black end*/
+
+/*footer top start*/
+.three-class{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 120px;
+}
+.each-class ul{
+list-style-type: none;
+}
+.each-class a{
+    text-decoration: none;
+    color:white;
+}
+.each-class li{
+    padding-bottom:20px ;
+}
+.l-text{
+    padding-left: 100px;
+}
+.footer-top{
+    background-color: rgb(58, 57, 57);
+    color: white;
+    padding-top: 60px; 
+    padding-bottom: 20px;
+}
+/*footet*/
+.all-footer {
+    padding: 20px;
+    background-color:black;
+    color: white;
+ }
+ .copyright-text a{
+text-decoration: none;
+color: red;
+ }
+ .copyright-text rouge{
+     color: red;
+ }
+ .copyright-text{
+     text-align: left;
+ }
+ .social-icons{
+    text-align:right
+  }
+  
+  .social-icons li{
+    display:inline-block;
+  }
+  .social-icons li{
+    margin-right:10px;
+  }
+.social-icons a{
+    background-color:red;
+    color:black;
+    font-size:20px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:10%;
+  }
+  
+  .social-icons a:hover{
+    background-color:white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
